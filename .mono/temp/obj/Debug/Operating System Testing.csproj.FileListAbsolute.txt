@@ -1,0 +1,8 @@
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\bin\Debug\Operating System Testing.dll
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\bin\Debug\Operating System Testing.pdb
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\obj\Debug\Operating System Testing.csprojAssemblyReference.cache
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\obj\Debug\Operating System Testing.AssemblyInfoInputs.cache
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\obj\Debug\Operating System Testing.AssemblyInfo.cs
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\obj\Debug\Operating System Testing.csproj.CoreCompileInputs.cache
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\obj\Debug\Operating System Testing.dll
+F:\Documents\Projects\Godot\Generic_Kiosk\.mono\temp\obj\Debug\Operating System Testing.pdb

@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Documents\\Projects\\Godot\\Generic_Kiosk\\Operating System Testing.csproj": {}
+  },
+  "projects": {
+    "F:\\Documents\\Projects\\Godot\\Generic_Kiosk\\Operating System Testing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Documents\\Projects\\Godot\\Generic_Kiosk\\Operating System Testing.csproj",
+        "projectName": "Operating System Testing",
+        "projectPath": "F:\\Documents\\Projects\\Godot\\Generic_Kiosk\\Operating System Testing.csproj",
+        "packagesPath": "C:\\Users\\Sweet\\.nuget\\packages\\",
+        "outputPath": "F:\\Documents\\Projects\\Godot\\Generic_Kiosk\\.mono\\temp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sweet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/CS/Pin_Label.cs" type="Script" id=1]
+[ext_resource path="res://Textures/UI/grey_checkmarkWhite.png" type="Texture" id=2]
+[ext_resource path="res://Themes/Default_Font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Themes/Default_Theme.tres" type="Theme" id=4]
+[ext_resource path="res://Textures/UI/grey_crossWhite.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/CS/Pin_Panel.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/CS/Button.cs" type="Script" id=8]
+
+[sub_resource type="Animation" id=1]
+resource_name = "out"
+length = 0.2
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "queue_free"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="Pin_PanelCS" type="Panel"]
+self_modulate = Color( 1, 0.713726, 0.333333, 1 )
+margin_right = 380.0
+margin_bottom = 768.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 72.0
+margin_top = 136.0
+margin_right = 314.0
+margin_bottom = 512.0
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="GridContainer"]
+margin_right = 78.0
+margin_bottom = 91.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 1 "
+script = ExtResource( 8 )
+
+[node name="Button2" type="Button" parent="GridContainer"]
+margin_left = 82.0
+margin_right = 160.0
+margin_bottom = 91.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 2 "
+script = ExtResource( 8 )
+Value = "2"
+
+[node name="Button3" type="Button" parent="GridContainer"]
+margin_left = 164.0
+margin_right = 242.0
+margin_bottom = 91.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 3 "
+script = ExtResource( 8 )
+Value = "3"
+
+[node name="Button4" type="Button" parent="GridContainer"]
+margin_top = 95.0
+margin_right = 78.0
+margin_bottom = 186.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 4 "
+script = ExtResource( 8 )
+Value = "4"
+
+[node name="Button5" type="Button" parent="GridContainer"]
+margin_left = 82.0
+margin_top = 95.0
+margin_right = 160.0
+margin_bottom = 186.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 5 "
+script = ExtResource( 8 )
+Value = "5"
+
+[node name="Button6" type="Button" parent="GridContainer"]
+margin_left = 164.0
+margin_top = 95.0
+margin_right = 242.0
+margin_bottom = 186.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 6 "
+script = ExtResource( 8 )
+Value = "6"
+
+[node name="Button7" type="Button" parent="GridContainer"]
+margin_top = 190.0
+margin_right = 78.0
+margin_bottom = 281.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 7 "
+script = ExtResource( 8 )
+Value = "7"
+
+[node name="Button8" type="Button" parent="GridContainer"]
+margin_left = 82.0
+margin_top = 190.0
+margin_right = 160.0
+margin_bottom = 281.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 8 "
+script = ExtResource( 8 )
+Value = "8"
+
+[node name="Button9" type="Button" parent="GridContainer"]
+margin_left = 164.0
+margin_top = 190.0
+margin_right = 242.0
+margin_bottom = 281.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 9 "
+script = ExtResource( 8 )
+Value = "9"
+
+[node name="Button_Back" type="Button" parent="GridContainer"]
+margin_top = 285.0
+margin_right = 78.0
+margin_bottom = 376.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+script = ExtResource( 8 )
+Value = "CLEAR"
+
+[node name="Sprite" type="Sprite" parent="GridContainer/Button_Back"]
+self_modulate = Color( 0.772549, 0.47451, 0.47451, 1 )
+position = Vector2( 40, 45 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+
+[node name="Button0" type="Button" parent="GridContainer"]
+margin_left = 82.0
+margin_top = 285.0
+margin_right = 160.0
+margin_bottom = 376.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+text = " 0 "
+script = ExtResource( 8 )
+Value = "0"
+
+[node name="Button_Send" type="Button" parent="GridContainer"]
+margin_left = 164.0
+margin_top = 285.0
+margin_right = 242.0
+margin_bottom = 376.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
+script = ExtResource( 8 )
+Value = "SEND"
+
+[node name="Sprite" type="Sprite" parent="GridContainer/Button_Send"]
+self_modulate = Color( 0.568627, 0.721569, 0.552941, 1 )
+position = Vector2( 40, 45 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="Pin_Panel" type="Panel" parent="."]
+margin_left = 101.562
+margin_top = 35.6359
+margin_right = 289.562
+margin_bottom = 105.636
+theme = ExtResource( 4 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pin_Label" type="Label" parent="Pin_Panel"]
+margin_left = 21.7515
+margin_top = -12.8021
+margin_right = 165.752
+margin_bottom = 78.1979
+custom_fonts/font = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/out = SubResource( 1 )
+[connection signal="Alt_Pressed" from="GridContainer/Button1" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button2" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button3" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button4" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button5" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button6" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button7" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button8" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button9" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button_Back" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button0" to="." method="bPressed"]
+[connection signal="Alt_Pressed" from="GridContainer/Button_Send" to="." method="bPressed"]
