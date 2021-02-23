@@ -79,7 +79,7 @@ theme = ExtResource( 4 )
 custom_fonts/font = SubResource( 3 )
 text = "GDScript"
 
-[node name="Button_C#" type="Button" parent="VBoxContainer"]
+[node name="Button_CS" type="Button" parent="VBoxContainer"]
 margin_top = 67.0
 margin_right = 448.0
 margin_bottom = 130.0
@@ -97,9 +97,9 @@ text = "CPP"
 [connection signal="mouse_entered" from="VBoxContainer/Button_GD" to="." method="_on_Button_GD_mouse_entered"]
 [connection signal="mouse_exited" from="VBoxContainer/Button_GD" to="." method="_on_Button_GD_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Button_GD" to="." method="_on_Button_GD_pressed"]
-[connection signal="mouse_entered" from="VBoxContainer/Button_C#" to="." method="_on_Button_C_mouse_entered"]
-[connection signal="mouse_exited" from="VBoxContainer/Button_C#" to="." method="_on_Button_C_mouse_exited"]
-[connection signal="pressed" from="VBoxContainer/Button_C#" to="." method="_on_Button_C_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Button_CS" to="." method="_on_Button_C_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Button_CS" to="." method="_on_Button_C_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Button_CS" to="." method="_on_Button_CS_pressed"]
 [connection signal="mouse_entered" from="VBoxContainer/Button_CPP" to="." method="_on_Button_CPP_mouse_entered"]
 [connection signal="mouse_exited" from="VBoxContainer/Button_CPP" to="." method="_on_Button_CPP_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Button_CPP" to="." method="_on_Button_CPP_pressed"]
